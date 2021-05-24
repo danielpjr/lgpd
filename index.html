@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGPD no seu site</title>
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            height: 0;
+            background-color: #f5f5f5;
+        }
+
+        header.gradient {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8089ff+0,54ceff+100 */
+            background: #8089ff;
+            /* Old browsers */
+            /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzgwODlmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1NGNlZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(left, #8089ff 0%, #54ceff 100%);
+            /* FF3.6-15 */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%, #8089ff), color-stop(100%, #54ceff));
+            /* Chrome4-9,Safari4-5 */
+            background: -webkit-linear-gradient(left, #8089ff 0%, #54ceff 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: -o-linear-gradient(left, #8089ff 0%, #54ceff 100%);
+            /* Opera 11.10-11.50 */
+            background: -ms-linear-gradient(left, #8089ff 0%, #54ceff 100%);
+            /* IE10 preview */
+            background: linear-gradient(to right, #8089ff 0%, #54ceff 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8089ff', endColorstr='#54ceff', GradientType=1);
+            /* IE6-8 */
+            background-size: cover;
+            color: white;
+        }
+
+        header nav {
+            min-height: 100px;
+            display: flex;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        header nav .container {
+            position: relative;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        header nav .navbar-brand {
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 2.55rem;
+            line-height: inherit;
+            white-space: nowrap;
+            text-decoration: none;
+            font-weight: normal;
+            color: white;
+        }
+
+        header nav .navbar-nav {
+            flex-direction: row;
+            margin-left: auto !important;
+            display: flex;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            margin-top: 0;
+        }
+        header nav .navbar-nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header section {
+            padding: 60px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        header section .header-img {
+            text-align: center;
+        }
+
+        header section img {
+            max-width: 100%;
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        header section .content {
+            margin-top: 20px;
+        }
+
+        header section h2 {
+            color: #fff;
+            font-size: 44px;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif;
+            margin-bottom: 0.5em;
+            margin-top: 0;
+            line-height: 1.2;
+        }
+
+        header section p {
+            font-size: 15px;
+            color: #fff;
+            line-height: 1.7em;
+            margin-bottom: 1.7em;
+            margin-top: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header section .btn-download {
+            position: relative;
+            display: inline-block;
+            background: #7b90ff;
+            color: #fff;
+            padding: 6px 20px 6px 52px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-top: 20px;
+            text-align: left;
+            border: 1px solid #fff;
+            border-radius: 40px;
+            transition: all 0.3s;
+            box-shadow: 0px 0px 45.9px 5.1px rgb(0 0 0 / 10%);
+            text-decoration: none;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .row {
+            position: relative;
+            z-index: 1;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        @media (min-width: 768px) {
+            .col {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        .col {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="gradient">
+
+        <nav>
+
+            <div class="container">
+                <h1 class="navbar-brand">LGPD no seu site</h1>
+                <ul class="navbar-nav" id="main-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header-img">
+                            <img src="https://demo.awaikenthemes.com/html-preview/appiest/6-chat-app-template/images/header.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="content">
+                            <h2>Inclua facilmente no seu site a solicitação para autorização do uso de cookies</h2>
+                            <p>
+                                Mais seguraça para você e seus clientes.
+                                <br>
+                                É muito simples, basta copiar e colar o código em seu site.
+                            </p>
+
+                            <div>
+                                <a href="#" class="btn-download">
+                                    <i class="fa fa-apple"></i> <span>Download on the</span>App Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+</body>
+
+</html>
