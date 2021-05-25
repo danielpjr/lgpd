@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<!-- https://preview.themeforest.net/item/appiest-multiconcept-app-landing-page-html/full_screen_preview/22493445?_ga=2.36737056.1073105090.1621819445-1701390567.1581544533 -->
 
 <head>
     <meta charset="UTF-8">
@@ -81,6 +82,7 @@
             list-style: none;
             margin-top: 0;
         }
+
         header nav .navbar-nav a {
             text-decoration: none;
             color: white;
@@ -243,6 +245,117 @@
             </div>
         </section>
     </header>
+
+    <div class="lgpd-overlay"
+        style="position: absolute; top:0; bottom: 0; left: 0; right: 0; background-color: tomato; opacity: .5; z-index: 998;">
+    </div>
+    <div class="lgpd-container"
+        style="position: absolute; top: 1.5rem; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background-color: violet; z-index: 999; display: flex; align-items: center; justify-content: center;">
+        <div class="lgpd-content"
+            style="max-width: 600px; min-height: 100px; background-color: whitesmoke; border: 1px solid #ccc; border-radius: 6px; padding: 1.5rem; box-shadow: 0 10px 20px black;">
+            <div class="lgpd-title">Nome do site e o uso de cookies</div>
+            <div>
+                Nosso website faz o uso de "cookies" para entregar anúncios específicos e também gerar uma experiência
+                completa em nosso site. Ao continuar, você concorda com a nossa Política de Privacidade.
+            </div>
+            <div>
+                <div>Configurações</div>
+                <div>Eu concordo</div>
+            </div>
+            <div class="lgpd-sub-title">Visão geral de privacidade</div>
+            <div>
+                Este site usa cookies para melhorar sua experiência enquanto você navega pelo site. Destes, os cookies
+                que são categorizados como necessários são armazenados no seu navegador, pois são essenciais para o
+                funcionamento das funcionalidades básicas do site. Também usamos cookies de terceiros que nos ajudam a
+                analisar e entender como você usa este site. Esses cookies serão armazenados em seu navegador apenas com
+                o seu consentimento. Você também tem a opção de cancelar esses cookies. Mas desativar alguns desses
+                cookies pode afetar sua experiência de navegação.
+            </div>
+            <div>Essenciais --- Sempre ativado</div>
+            <div>
+                Os cookies necessários são absolutamente essenciais para o funcionamento adequado do site. Esta
+                categoria inclui apenas cookies que garantem funcionalidades básicas e recursos de segurança do site.
+                Esses cookies não armazenam nenhuma informação pessoal.
+            </div>
+            <div>Essenciais --- Ativar/Desativar</div>
+            <div style="height: 0; overflow: hidden;" id="lgpd-slide-2">
+                <div>
+                    Quaisquer cookies que podem não ser privilegiados para o funcionamento do site e sejam usados
+                    especificamente para coletar dados pessoais do usuário por meio de análises, conteúdo e outros
+                    conteúdos
+                    incorporados são denominados cookies não informados. É obrigatório obter o consentimento do usuário
+                    antes de executar esses cookies no seu site.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .slide-up,
+        .slide-down {
+            max-height: 0;
+            overflow-y: hidden;
+            -webkit-transition: max-height 0.5s ease-in-out;
+            -moz-transition: max-height 0.5s ease-in-out;
+            -o-transition: max-height 0.5s ease-in-out;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .slide-down {
+            max-height: 10em;
+        }
+    </style>
+    <script type="text/javascript">
+
+        const expandSlide = (item) => {
+            if (item) {
+                var itemSlide = document.getElementById(item.getAttribute('itemSlide'))
+                itemSlide.style.height = itemSlide.querySelector('div:first-child').clientHeight + 'px'
+                setTimeout(() => itemSlide.style.height = 'auto', 500)
+            }
+        }
+
+        const collapseSlide = (item) => {
+            if (item) {
+                var itemSlide = item.querySelector('div:first-child')
+                item.classList.remove('nav-expanded', 'nav-active');
+                itemSlide.style.height = itemSlide.querySelector('ul').clientHeight + 'px'
+                setTimeout(() => itemSlide.style.height = '0', 50)
+            }
+        }
+
+        (function (document) {
+            "use strict";
+
+            var hidden_el = document.getElementsByClassName("hidden-content"),
+                control_el = document.getElementsByClassName("toggle-content");
+
+            if (hidden_el.length < 1 || control_el.length < 1) {
+                return;
+            }
+
+            // Get the elements
+            hidden_el = hidden_el[0];
+            control_el = control_el[0];
+
+            control_el.onclick = function () {
+                var element_classes = (" " + hidden_el.className + " ").replace(/[\n\t\r]/g, " "),
+                    remove_class = "slide-down",
+                    add_class = "slide-up",
+                    is_showing = element_classes.indexOf(" " + remove_class + " ") > -1;
+
+                if (!is_showing) {
+                    // Switch variable values
+                    remove_class = [add_class, add_class = remove_class][0];
+                }
+
+                // Remove the previous class (if present) and add the new class
+                hidden_el.className = (element_classes.replace(" " + remove_class + " ", "") + " " + add_class + " ").trim();
+
+                return false;
+            };
+        })(document);
+    </script>
 
 </body>
 
