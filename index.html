@@ -250,112 +250,208 @@
         style="position: absolute; top:0; bottom: 0; left: 0; right: 0; background-color: tomato; opacity: .5; z-index: 998;">
     </div>
     <div class="lgpd-container"
-        style="position: absolute; top: 1.5rem; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background-color: violet; z-index: 999; display: flex; align-items: center; justify-content: center;">
+        style="position: absolute; top: 1.5rem; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background-color: violet; z-index: 999; display: flex; align-items: center; justify-content: center; font-family: sans-serif;font-size: 1rem; color: #333;">
         <div class="lgpd-content"
-            style="max-width: 600px; min-height: 100px; background-color: whitesmoke; border: 1px solid #ccc; border-radius: 6px; padding: 1.5rem; box-shadow: 0 10px 20px black;">
-            <div class="lgpd-title">Nome do site e o uso de cookies</div>
-            <div>
+            style="max-width: 600px; min-height: 100px; background-color: whitesmoke; border: 1px solid #ccc; border-radius: 6px; padding: 2rem; box-shadow: 0 10px 20px black;">
+            <div style="font-size: 1.1rem; font-weight: bold;">Uso de cookies neste site</div>
+            <div style="padding: .8rem 0 1rem 0;">
                 Nosso website faz o uso de "cookies" para entregar anúncios específicos e também gerar uma experiência
                 completa em nosso site. Ao continuar, você concorda com a nossa Política de Privacidade.
             </div>
-            <div>
-                <div>Configurações</div>
-                <div>Eu concordo</div>
-            </div>
-            <div class="lgpd-sub-title">Visão geral de privacidade</div>
-            <div>
-                Este site usa cookies para melhorar sua experiência enquanto você navega pelo site. Destes, os cookies
-                que são categorizados como necessários são armazenados no seu navegador, pois são essenciais para o
-                funcionamento das funcionalidades básicas do site. Também usamos cookies de terceiros que nos ajudam a
-                analisar e entender como você usa este site. Esses cookies serão armazenados em seu navegador apenas com
-                o seu consentimento. Você também tem a opção de cancelar esses cookies. Mas desativar alguns desses
-                cookies pode afetar sua experiência de navegação.
-            </div>
-            <div>Essenciais --- Sempre ativado</div>
-            <div>
-                Os cookies necessários são absolutamente essenciais para o funcionamento adequado do site. Esta
-                categoria inclui apenas cookies que garantem funcionalidades básicas e recursos de segurança do site.
-                Esses cookies não armazenam nenhuma informação pessoal.
-            </div>
-            <div>Essenciais --- Ativar/Desativar</div>
-            <div style="height: 0; overflow: hidden;" id="lgpd-slide-2">
+            <div
+                style="height: 36px; display: flex; align-items: center; justify-content: space-between; letter-spacing: 1px;">
                 <div>
-                    Quaisquer cookies que podem não ser privilegiados para o funcionamento do site e sejam usados
-                    especificamente para coletar dados pessoais do usuário por meio de análises, conteúdo e outros
-                    conteúdos
-                    incorporados são denominados cookies não informados. É obrigatório obter o consentimento do usuário
-                    antes de executar esses cookies no seu site.
+                    <a href=""
+                        style="text-decoration: none; color: #f5f5f5; display: inline-block; background-color: #61a229; height: 36px; display: flex; align-items: center; padding: 0 12px; border-radius: 4px;">
+                        Eu concordo
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="lgpd-more-options-btn"
+                        style="text-decoration: none; color: #6c6c6c;"><span>[+]</span> opções</a>
+                </div>
+            </div>
+            <!-- height: 0;  -->
+            <div class="lgpd-more-options-slide" style="overflow: hidden; height: 0; -webkit-transition: height 0.5s ease-in-out; -moz-transition: height 0.5s ease-in-out; -o-transition: height 0.5s ease-in-out; transition: height 0.5s ease-in-out;">
+                <div style="padding-top: 2.5rem;">
+                    <div style="font-weight: bold; padding-bottom: .5rem;">Visão geral sobre a privacidade</div>
+                    <div style="padding-bottom: 1.5rem;">
+                        Este site usa cookies para melhorar sua experiência enquanto você navega pelo site. Destes, os
+                        cookies
+                        que são categorizados como necessários são armazenados no seu navegador, pois são essenciais
+                        para o
+                        funcionamento das funcionalidades básicas do site. Também usamos cookies de terceiros que nos
+                        ajudam a
+                        analisar e entender como você usa este site. Esses cookies serão armazenados em seu navegador
+                        apenas com
+                        o seu consentimento. Você também tem a opção de cancelar esses cookies. Mas desativar alguns
+                        desses
+                        cookies pode afetar sua experiência de navegação.
+                    </div>
+                    <div style="border: 1px solid #ccc; border-radius: 4px; padding: 4px 10px; margin: 10px 0;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex; align-items: center;">
+                                <svg width="14" height="14" fill="#777" viewBox="0 0 14 14">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg>
+                                <span style="padding-left: 10px;">
+                                    Essenciais
+                                    <small style="color: #6c6c6c;"> --- sempre ativo</small>
+                                </span>
+                            </div>
+                            <svg style="height: 24px; width: 24px;" fill="#61a229" viewBox="0 0 16 16">
+                                <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                            </svg>
+                        </div>
+                        <div class="lgpd-slide" style="height: 0; overflow: hidden;">
+                            <div style="padding-top: 15px;">
+                                Os cookies necessários são absolutamente essenciais para o funcionamento adequado do
+                                site. Esta
+                                categoria inclui apenas cookies que garantem funcionalidades básicas e recursos de
+                                segurança do
+                                site.
+                                Esses cookies não armazenam nenhuma informação pessoal.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid #ccc; border-radius: 4px; padding: 4px 10px;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex; align-items: center;">
+                                <svg width="14" height="14" fill="#777" viewBox="0 0 14 14">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg>
+                                <span style="padding-left: 10px;">Não essenciais</span>
+                            </div>
+                            <div class="lgpd-toggle-switch">
+                                <svg class="lgpd-toggle-switch-enabled"
+                                    style="height: 24px; width: 24px; display: none;" fill="#61a229"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                                </svg>
+                                <svg class="lgpd-toggle-switch-disabled"
+                                    style="height: 24px; width: 24px; transform: rotate(180deg);" fill="#6d6c6c"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="lgpd-slide" style="height: 0; overflow: hidden;">
+                            <div style="padding-top: 15px;">
+                                Quaisquer cookies que podem não ser privilegiados para o funcionamento do site e sejam
+                                usados
+                                especificamente para coletar dados pessoais do usuário por meio de análises, conteúdo e
+                                outros
+                                conteúdos
+                                incorporados são denominados cookies não informados. É obrigatório obter o consentimento
+                                do
+                                usuário
+                                antes de executar esses cookies no seu site.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <style>
-        .slide-up,
-        .slide-down {
-            max-height: 0;
-            overflow-y: hidden;
-            -webkit-transition: max-height 0.5s ease-in-out;
-            -moz-transition: max-height 0.5s ease-in-out;
-            -o-transition: max-height 0.5s ease-in-out;
-            transition: max-height 0.5s ease-in-out;
-        }
-
-        .slide-down {
-            max-height: 10em;
-        }
-    </style>
-    <script type="text/javascript">
-
-        const expandSlide = (item) => {
-            if (item) {
-                var itemSlide = document.getElementById(item.getAttribute('itemSlide'))
-                itemSlide.style.height = itemSlide.querySelector('div:first-child').clientHeight + 'px'
-                setTimeout(() => itemSlide.style.height = 'auto', 500)
-            }
-        }
-
-        const collapseSlide = (item) => {
-            if (item) {
-                var itemSlide = item.querySelector('div:first-child')
-                item.classList.remove('nav-expanded', 'nav-active');
-                itemSlide.style.height = itemSlide.querySelector('ul').clientHeight + 'px'
-                setTimeout(() => itemSlide.style.height = '0', 50)
-            }
-        }
-
-        (function (document) {
-            "use strict";
-
-            var hidden_el = document.getElementsByClassName("hidden-content"),
-                control_el = document.getElementsByClassName("toggle-content");
-
-            if (hidden_el.length < 1 || control_el.length < 1) {
-                return;
+        <style>
+            .slide-up,
+            .slide-down {
+                height: 0;
+                overflow-y: hidden;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                -moz-transition: max-height 0.5s ease-in-out;
+                -o-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
             }
 
-            // Get the elements
-            hidden_el = hidden_el[0];
-            control_el = control_el[0];
+            .slide-down {
+                max-height: 10em;
+            }
+        </style>
+        <script type="text/javascript">
 
-            control_el.onclick = function () {
-                var element_classes = (" " + hidden_el.className + " ").replace(/[\n\t\r]/g, " "),
-                    remove_class = "slide-down",
-                    add_class = "slide-up",
-                    is_showing = element_classes.indexOf(" " + remove_class + " ") > -1;
+            const expandSlide = (item) => {
+                if (item) {
+                    var itemSlide = document.getElementById(item.getAttribute('itemSlide'))
+                    itemSlide.style.height = itemSlide.querySelector('div:first-child').clientHeight + 'px'
+                    setTimeout(() => itemSlide.style.height = 'auto', 500)
+                }
+            }
 
-                if (!is_showing) {
-                    // Switch variable values
-                    remove_class = [add_class, add_class = remove_class][0];
+            const collapseSlide = (item) => {
+                if (item) {
+                    var itemSlide = item.querySelector('div:first-child')
+                    item.classList.remove('nav-expanded', 'nav-active');
+                    itemSlide.style.height = itemSlide.querySelector('ul').clientHeight + 'px'
+                    setTimeout(() => itemSlide.style.height = '0', 50)
+                }
+            }
+
+            (function (document) {
+                "use strict";
+
+                var moreOptionsSliding = false;
+
+                document.querySelector('.lgpd-more-options-btn').addEventListener('click', function (ev) {
+
+                    ev.preventDefault()
+
+                    if (false == moreOptionsSliding) {
+
+                        moreOptionsSliding = true
+
+                        var symbolContainer = ev.currentTarget.querySelector('span')
+                        var currentSymbol = symbolContainer.textContent || symbolContainer.innerText
+                        var slide = document.querySelector('.lgpd-more-options-slide')
+                        var slideContent = slide.querySelector('div:first-child')
+
+                        if (currentSymbol == '[+]') {
+                            slide.style.height = slideContent.clientHeight + 'px'
+                            symbolContainer.innerText = '[-]'
+                        } else {
+                            slide.style.height = '0px'
+                            symbolContainer.innerText = '[+]'
+                        }
+
+                        setTimeout(function(){
+                            moreOptionsSliding = false
+                        }, 600)
+                    }
+                })
+
+                var hidden_el = document.getElementsByClassName("hidden-content"),
+                    control_el = document.getElementsByClassName("toggle-content");
+
+                if (hidden_el.length < 1 || control_el.length < 1) {
+                    return;
                 }
 
-                // Remove the previous class (if present) and add the new class
-                hidden_el.className = (element_classes.replace(" " + remove_class + " ", "") + " " + add_class + " ").trim();
+                // Get the elements
+                hidden_el = hidden_el[0];
+                control_el = control_el[0];
 
-                return false;
-            };
-        })(document);
-    </script>
+                control_el.onclick = function () {
+                    var element_classes = (" " + hidden_el.className + " ").replace(/[\n\t\r]/g, " "),
+                        remove_class = "slide-down",
+                        add_class = "slide-up",
+                        is_showing = element_classes.indexOf(" " + remove_class + " ") > -1;
+
+                    if (!is_showing) {
+                        // Switch variable values
+                        remove_class = [add_class, add_class = remove_class][0];
+                    }
+
+                    // Remove the previous class (if present) and add the new class
+                    hidden_el.className = (element_classes.replace(" " + remove_class + " ", "") + " " + add_class + " ").trim();
+
+                    return false;
+                };
+            })(document);
+        </script>
 
 </body>
 
