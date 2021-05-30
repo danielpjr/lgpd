@@ -1,6 +1,7 @@
 # LGPD
 Inclua LGPD no seu site. Simples e fácil. Não precisa ser programador para utilizar.
-**GRATUITO !!!** Isso mesmo, totalmente de graça.
+
+😄 **GRATUITO !!!** Isso mesmo, totalmente de graça.
 
 # Clique [AQUI](https://lgpd.ml) para saber como utilizar.
 
