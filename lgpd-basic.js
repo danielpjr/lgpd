@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         'use strict';
 
-        var lgpdCookiesAccepted = Cookies.get('lgpd-cookies-accepted') || 'not';
+        var lgpdCookieName = window.location.host.replace(/[^0-9A-Z]/ig, '-') + 'lgpd-cookies-accepted';
+
+        var lgpdCookiesAccepted = Cookies.get(lgpdCookieName) || 'not';
 
         if (lgpdCookiesAccepted != 'yes') {
 
@@ -19,10 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         completa em nosso site. Ao continuar, você concorda com a nossa Política de Privacidade.
                     </div>
                 </div>
-                <div>
+                <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
                     <a href="" class="lgpd-accept-trigger" style="text-decoration: none; color: #f5f5f5; display: inline-block; background-color: #61a229; width: 130px; height: 36px; display: flex; align-items: center; justify-content: center; letter-spacing: 1px; padding: 0 12px; border-radius: 4px;">
                         Eu concordo
                     </a>
+                    <a href="https://lgpd.ml" target="_blank" style="color: #96c399; font-family: sans-serif; font-size: 0.8rem; letter-spacing: 1px; text-decoration: none;">by lgpd.ml</a>
                 </div>
             </div>`)
 
@@ -36,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     ev.preventDefault();
 
-                    Cookies.set('lgpd-cookies-accepted', 'yes', { expires: 360 })
+                    Cookies.set(lgpdCookieName, 'yes', { expires: 360 })
 
                     elementContainer.style.transform = 'translateY(100%)'
 
