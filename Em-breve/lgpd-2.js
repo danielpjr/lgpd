@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         'use strict';
 
-        var lgpdCookiesAccepted = Cookies.get('lgpd-cookies-accepted') || 'not';
+        var lgpdCookieName = window.location.host.replace(/[^0-9A-Z]/ig, '-') + '-lgpd-cookies-accepted';
+
+        var lgpdCookiesAccepted = Cookies.get(lgpdCookieName) || 'not';
 
         if (lgpdCookiesAccepted != 'yes') {
 
@@ -152,7 +154,7 @@ style="position: fixed; top: 1.5rem; bottom: 1.5rem; left: 1.5rem; right: 1.5rem
 
                     ev.preventDefault();
 
-                    Cookies.set('lgpd-cookies-accepted', 'yes', { expires: 360 })
+                    Cookies.set(lgpdCookieName, 'yes', { expires: 360 })
 
                     elementOverlay.style.opacity = '0'
                     elementContent.style.opacity = '0'

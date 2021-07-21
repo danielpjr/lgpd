@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         'use strict';
 
-        var lgpdCookieName = window.location.host.replace(/[^0-9A-Z]/ig, '-') + 'lgpd-cookies-accepted';
+        var lgpdCookieName = window.location.host.replace(/[^0-9A-Z]/ig, '-') + '-lgpd-cookies-accepted';
 
         var lgpdCookiesAccepted = Cookies.get(lgpdCookieName) || 'not';
 
