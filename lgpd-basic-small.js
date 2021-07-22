@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (lgpdCookiesAccepted != 'yes') {
 
-            document.querySelector('body').insertAdjacentHTML('beforeend', `<div class="lgpd-container" style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; display: flex; justify-content: center; font-family: sans-serif;font-size: 1rem; color: #333; min-width: 100%; background-color: #f5f5f5; border: 1px solid #ccc; padding: 2rem; box-shadow: 0 5px 10px black; transform: translateY(100%); transition: all ease-in-out 0.7s;">
+            document.querySelector('body').insertAdjacentHTML('beforeend', `<div class="lgpd-container" style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; display: flex; justify-content: center; font-family: sans-serif;font-size: 1rem; color: #333; min-width: 100%; background-color: #f5f5f5; border: 1px solid #ccc; padding: 0.5rem; box-shadow: 0 5px 10px black; transform: translateY(100%); transition: all ease-in-out 0.7s;">
                 <div class="lgpd-content">
-                    <div style="font-size: 1.1rem; font-weight: bold;">Uso de cookies neste site</div>
-                    <div style="padding: .8rem 1rem .8rem 0; line-height: 22px;">
+                    <div style="font-size: 0.9rem; font-weight: bold;">Uso de cookies neste site</div>
+                    <div style="padding: 0.2rem 1rem 0 0; font-size: 0.9rem;">
                         Nosso website faz o uso de "cookies" para entregar anúncios específicos e também gerar uma experiência
                         completa em nosso site. Ao continuar, você concorda com a nossa Política de Privacidade.
                     </div>
                 </div>
                 <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
-                    <a href="" class="lgpd-accept-trigger" style="text-decoration: none; color: #f5f5f5; background-color: #61a229; width: 130px; height: 36px; display: flex; align-items: center; justify-content: center; letter-spacing: 1px; padding: 0 12px; border-radius: 4px;">
+                    <a href="" class="lgpd-accept-trigger" style="font-size: 0.9rem; text-decoration: none; color: #f5f5f5; background-color: #61a229; display: flex; align-items: center; justify-content: center; letter-spacing: 1px; padding: 2px 6px; border-radius: 4px;">
                         Eu concordo
                     </a>
-                    <a href="https://lgpd.ml" target="_blank" style="color: #96c399; font-family: sans-serif; font-size: 0.8rem; letter-spacing: 1px; text-decoration: none;">by lgpd.ml</a>
+                    <a href="https://lgpd.ml" target="_blank" style="color: #96c399; font-family: sans-serif; font-size: 0.7rem; letter-spacing: 1px; text-decoration: none;">by lgpd.ml</a>
                 </div>
             </div>`)
 
