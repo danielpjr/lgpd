@@ -32,8 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(function () {
 
                 var elementContainer = document.querySelector('.lgpd-container');
+                var containerHeight = elementContainer.offsetHeight || elementContainer.clientHeight || 0;
+                var currentBodyPaddingBottom = parseInt(document.querySelector('body').style.paddingBottom.replace(/[^0-9]/g, '') || 0);
+        
+                elementContainer.style.transform = 'translateY(0)';
 
-                elementContainer.style.transform = 'translateY(0)'
+                document.querySelector('body').style.paddingBottom = (containerHeight + currentBodyPaddingBottom) + 'px';
 
                 document.querySelector('.lgpd-accept-trigger').addEventListener('click', function (ev) {
 
