@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (lgpdCookiesAccepted != 'yes') {
 
-            document.querySelector('body').insertAdjacentHTML('beforeend', `<div class="lgpd-container" style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; display: flex; justify-content: center; font-family: sans-serif;font-size: 1rem; color: #333; min-width: 100%; background-color: #f5f5f5; border: 1px solid #ccc; padding: 2rem; box-shadow: 0 5px 10px black; transform: translateY(100%); transition: all ease-in-out 0.7s;">
+            document.querySelector('body').insertAdjacentHTML('beforeend', `<div class="lgpd-container" style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 2000; display: flex; justify-content: center; font-family: sans-serif;font-size: 1rem; color: #333; min-width: 100%; background-color: #f5f5f5; border: 1px solid #ccc; padding: 2rem; box-shadow: 0 5px 10px black; transform: translateY(100%); transition: all ease-in-out 0.7s;">
                 <div class="lgpd-content">
                     <div style="font-size: 1.1rem; font-weight: bold;">Uso de cookies neste site</div>
                     <div style="padding: .8rem 1rem .8rem 0; line-height: 22px;">
