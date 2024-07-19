@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (lgpdCookiesAccepted != 'yes') {
 
             document.querySelector('body').insertAdjacentHTML('beforeend', `<div class="lgpd-overlay" style="position: fixed; top:0; right: 0; bottom: 0; left: 0; background-color: #000; opacity: 0; z-index: 998; transition: opacity ease-in-out 0.7s;"></div>
-                <div class="lgpd-container" style="position: fixed; top: 1.5rem; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 999; display: flex; align-items: center; justify-content: center; font-family: sans-serif;font-size: 1rem; color: #333;">
+                <div class="lgpd-container" style="position: fixed; top: 1.5rem; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 2000; display: flex; align-items: center; justify-content: center; font-family: sans-serif;font-size: 1rem; color: #333;">
                 <div class="lgpd-content" style="max-width: 600px; min-height: 100px; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 6px; padding: 2rem; box-shadow: 0 10px 20px black; transform: scale(0.1); opacity: 0.1; transition: all ease-in-out 0.7s;">
                     <div style="font-size: 1.1rem; font-weight: bold;">Uso de cookies neste site</div>
                     <div style="padding: .8rem 0 1rem 0; line-height: 22px;">
